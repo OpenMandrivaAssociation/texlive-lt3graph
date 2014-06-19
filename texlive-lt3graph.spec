@@ -1,12 +1,12 @@
-# revision 32356
+# revision 33623
 # category Package
 # catalog-ctan /macros/latex/contrib/lt3graph
-# catalog-date 2013-12-08 00:11:37 +0100
+# catalog-date 2014-04-22 01:06:17 +0200
 # catalog-license lppl1.3
-# catalog-version 0.0.9-r1
+# catalog-version 0.1.3
 Name:		texlive-lt3graph
-Version:	0.0.9.r1
-Release:	2
+Version:	0.1.3
+Release:	1
 Summary:	Provide a graph datastructure for experimental LaTeX3
 Group:		Publishing
 URL:		http://www.ctan.org/tex-archive/macros/latex/contrib/lt3graph
