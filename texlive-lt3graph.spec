@@ -6,7 +6,7 @@
 # catalog-version 0.1.3
 Name:		texlive-lt3graph
 Version:	0.1.3
-Release:	2
+Release:	3
 Summary:	Provide a graph datastructure for experimental LaTeX3
 Group:		Publishing
 URL:		http://www.ctan.org/tex-archive/macros/latex/contrib/lt3graph
