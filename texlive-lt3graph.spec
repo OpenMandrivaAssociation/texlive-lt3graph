@@ -1,9 +1,3 @@
-# revision 33623
-# category Package
-# catalog-ctan /macros/latex/contrib/lt3graph
-# catalog-date 2014-04-22 01:06:17 +0200
-# catalog-license lppl1.3
-# catalog-version 0.1.3
 Name:		texlive-lt3graph
 Version:	0.1.9
 Release:	1
@@ -32,12 +26,8 @@ documents that are using the experimental LaTeX 3 syntax.
 
 #-----------------------------------------------------------------------
 %files
-%{_texmfdistdir}/tex/latex/lt3graph/lt3graph-dry.sty
-%{_texmfdistdir}/tex/latex/lt3graph/lt3graph-packagedoc.cls
-%{_texmfdistdir}/tex/latex/lt3graph/lt3graph.sty
-%doc %{_texmfdistdir}/doc/latex/lt3graph/README
-%doc %{_texmfdistdir}/doc/latex/lt3graph/lt3graph.pdf
-%doc %{_texmfdistdir}/doc/latex/lt3graph/lt3graph.tex
+%{_texmfdistdir}/tex/latex/lt3graph
+%doc %{_texmfdistdir}/doc/latex/lt3graph
 
 #-----------------------------------------------------------------------
 %prep
