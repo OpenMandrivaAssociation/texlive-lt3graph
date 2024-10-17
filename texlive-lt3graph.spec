@@ -3,7 +3,7 @@ Version:	45913
 Release:	2
 Summary:	Provide a graph datastructure for experimental LaTeX3
 Group:		Publishing
-URL:		http://www.ctan.org/tex-archive/macros/latex/contrib/lt3graph
+URL:		https://www.ctan.org/tex-archive/macros/latex/contrib/lt3graph
 License:	LPPL1.3
 Source0:	http://mirrors.ctan.org/systems/texlive/tlnet/archive/lt3graph.r%{version}.tar.xz
 Source1:	http://mirrors.ctan.org/systems/texlive/tlnet/archive/lt3graph.doc.r%{version}.tar.xz
