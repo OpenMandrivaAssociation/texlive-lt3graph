@@ -1,40 +1,21 @@
-Name:		texlive-lt3graph
-Version:	45913
-Release:	2
+%global tl_name lt3graph
+%global tl_revision 76924
+
+Name:		texlive-%{tl_name}
+Epoch:		1
+Version:	0.1.9
+Release:	%{tl_revision}.1
 Summary:	Provide a graph datastructure for experimental LaTeX3
 Group:		Publishing
 URL:		https://www.ctan.org/tex-archive/macros/latex/contrib/lt3graph
-License:	LPPL1.3
-Source0:	http://mirrors.ctan.org/systems/texlive/tlnet/archive/lt3graph.r%{version}.tar.xz
-Source1:	http://mirrors.ctan.org/systems/texlive/tlnet/archive/lt3graph.doc.r%{version}.tar.xz
+License:	lppl1.3
+Source0:	https://mirrors.ctan.org/systems/texlive/tlnet/archive/lt3graph.r%{tl_revision}.tar.xz
+Source1:	https://mirrors.ctan.org/systems/texlive/tlnet/archive/lt3graph.doc.r%{tl_revision}.tar.xz
 BuildArch:	noarch
-BuildRequires:	texlive-tlpkg
-Requires(pre):	texlive-tlpkg
-Requires(post):	texlive-kpathsea
+BuildSystem:	texlive
+Provides:	texlive(%{tl_name}) = %{tl_revision}
 
 %description
-The package defines a 'graph' data structure, for use in
-documents that are using the experimental LaTeX 3 syntax.
+The package defines a 'graph' data structure, for use in documents that
+are using the experimental LaTeX 3 syntax.
 
-%post
-%{_sbindir}/texlive.post
-
-%postun
-if [ $1 -eq 0 ]; then
-	%{_sbindir}/texlive.post
-fi
-
-#-----------------------------------------------------------------------
-%files
-%{_texmfdistdir}/tex/latex/lt3graph
-%doc %{_texmfdistdir}/doc/latex/lt3graph
-
-#-----------------------------------------------------------------------
-%prep
-%autosetup -p1 -c -a1
-
-%build
-
-%install
-mkdir -p %{buildroot}%{_texmfdistdir}
-cp -fpar tex doc %{buildroot}%{_texmfdistdir}
